@@ -43,3 +43,64 @@ A confusion matrix is a tabular representation of prediction outcomes of any bin
 2. True Negative(TN): in this case, the prediction outcome is false, and it is false in reality, also.
 3. False Positive(FP): In this case, prediction outcomes are true, but they are false in actuality.
 4. False Negative(FN): In this case, predictions are false, and they are true in actuality.
+
+
+###### Precision
+It can be calculated as the True Positive or predictions that are actually true to the total positive predictions (True Positive and False Positive).
+
+![image](https://user-images.githubusercontent.com/108605935/208360699-d2e5d7c0-201e-4b8b-9d9a-b4e08ef867fc.png)
+
+
+###### Recall or Sensitivity
+
+It is also similar to the Precision metric; however, it aims to calculate the proportion of actual positive that was identified incorrectly. It can be calculated as True Positive or predictions that are actually true to the total number of positives, either correctly predicted as positive or incorrectly predicted as negative (true Positive and false negative).
+
+The formula for calculating Recall is given below:
+![image](https://user-images.githubusercontent.com/108605935/208361030-7b9a38be-e143-4094-b665-32905957c718.png)
+
+
+###### When to use Precision and Recall?
+
+From the above definitions of Precision and Recall, we can say that recall determines the performance of a classifier with respect to a false negative, whereas precision gives information about the performance of a classifier with respect to a false positive.
+
+So, if we want to minimize the false negative, then, Recall should be as near to 100%, and if we want to minimize the false positive, then precision should be close to 100% as possible.
+
+In simple words, if we maximize precision, it will minimize the FP errors, and if we maximize recall, it will minimize the FN error.
+
+###### F-Scores
+F-score or F1 Score is a metric to evaluate a binary classification model on the basis of predictions that are made for the positive class. It is calculated with the help of Precision and Recall. It is a type of single score that represents both Precision and Recall. So, the F1 Score can be calculated as the harmonic mean of both precision and Recall, assigning equal weight to each of them.
+
+The formula for calculating the F1 score is given below:
+
+![image](https://user-images.githubusercontent.com/108605935/208361421-7c4dab07-b22d-4a26-8a00-5ac750cd944d.png)
+
+
+###### When to use F-Score?
+
+As F-score make use of both precision and recall, so it should be used if both of them are important for evaluation, but one (precision or recall) is slightly more important to consider than the other. For example, when False negatives are comparatively more important than false positives, or vice versa.
+
+
+### Performance Metrics for Regression
+Mean Absolute Error
+Mean Squared Error
+R2 Score
+Adjusted R2
+
+III. R Squared Score
+R squared error is also known as Coefficient of Determination, which is another popular metric used for Regression model evaluation. The R-squared metric enables us to compare our model with a constant baseline to determine the performance of the model. To select the constant baseline, we need to take the mean of the data and draw the line at the mean.
+The R squared score will always be less than or equal to 1 without concerning if the values are too large or small.
+![image](https://user-images.githubusercontent.com/108605935/208362508-7c447c97-80f3-4369-8d6f-153c74e34a40.png)
+
+
+Adjusted R Squared
+Adjusted R squared, as the name suggests, is the improved version of R squared error. R square has a limitation of improvement of a score on increasing the terms, even though the model is not improving, and it may mislead the data scientists.
+
+To overcome the issue of R square, adjusted R squared is used, which will always show a lower value than R². It is because it adjusts the values of increasing predictors and only shows improvement if there is a real improvement.
+
+We can calculate the adjusted R squared as follows:
+
+![image](https://user-images.githubusercontent.com/108605935/208362602-bbe7331b-b7e0-4313-9024-b761767035eb.png)
+
+
+
+Source: https://www.javatpoint.com/performance-metrics-in-machine-learning
