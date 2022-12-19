@@ -1,5 +1,7 @@
 # Performance Metrics for in Machine Learning
 
+<<<<<< kaggle performance metric in machine learning >>>>>>
+
 Simply building a predictive model should not our motive. It’s about creating and selecting a model which gives high accuracy on out of sample data. Hence, it is crucial to check the accuracy of your model prior to computing predicted values.
 
 Machine learning metrics are techniques used to check machine learning model performance on the input data that was supplied to it and how well the model generalizes on new data. This way, the performance of the model can be improved by tuning the hyper parameters or tweaking features of the input dataset. 
